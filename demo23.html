@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <script>
+    function demo1()
+    {
+        document.writeln("I am in DEMO-1</br>")
+        {
+            var a=10
+            document.writeln("Inside the Block</br>")
+            document.writeln("a="+a+"</br>")
+
+        }
+        document.writeln("a="+a+"</br>")
+
+    }
+    demo1()
+    function demo2()
+    {
+        document.writeln("I am in DEMO-2</br>")
+        {
+            let a=10
+            document.writeln("Inside the Block</br>")
+            document.writeln("a="+a+"</br>") // a got value because it is in block scope
+
+        }
+        document.writeln("a="+a+"</br>") // a is not in block scope 
+
+    }
+    //demo1()
+    demo2()
+    function demo3()
+    {
+        document.writeln("I am in DEMO-3</br>")
+        {
+            const a=10
+            // a=20 re-assignment is not possible
+            document.writeln("Inside the Block</br>")
+            document.writeln("a="+a+"</br>")
+
+        }
+        document.writeln("a="+a+"</br>")
+
+    }
+    //demo1()
+    //demo2()
+    demo3()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
